@@ -1,5 +1,6 @@
 package com.tasktrackerapplication.services;
 
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,10 @@ public class TaskService {
 	
 	// saving a task
 	public TaskModel save(TaskModel taskModel) {
+		if(taskModel.getId() == null) {
+			taskModel.setCreatedDateTime(LocalDateTime.now());
+		}
+		taskModel.setUpdatedDateTime(LocalDateTime.now());
 		return taskRepository.save(taskModel);
 	}
 	

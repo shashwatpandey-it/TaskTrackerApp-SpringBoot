@@ -21,8 +21,8 @@ public class TaskModel {
 	private Integer id;
 	
 	private String taskDescription;
-	
-	private boolean isComplete;
+
+	private boolean status;
 	
 	private LocalDateTime createdDateTime;
 	
@@ -30,9 +30,11 @@ public class TaskModel {
 
 	@Override
 	public String toString() {
-		return "TaskModel [id=" + id + ", taskDescription=" + taskDescription + ", isComplete=" + isComplete
+		return "TaskModel [id=" + id + ", taskDescription=" + taskDescription + ", status=" + status
 				+ ", createdDateTime=" + createdDateTime + ", updatedDateTime=" + updatedDateTime + "]";
 	}
+
+	
 	
 	
 }
