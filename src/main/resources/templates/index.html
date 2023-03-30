@@ -1,0 +1,85 @@
+<!doctype html>
+<html land=en xmlns:th="http:/www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>index</title>
+	<link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.css}" />
+	<link th:rel="stylesheet" th:href="@{/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css}" />
+</head>
+<body class="bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-success bg-gradient" style="--bs-bg-opacity: .25">
+	  <div class="container-fluid">
+	    <a class="navbar-brand"><strong>Task Tracker App</strong></a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav ms-auto">
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            <i class="bi bi-person-circle"></i>
+	          </a>
+	          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" ><span th:text="${user.email}"></span></a></li>
+	            <li><hr class="dropdown-divider"></li>
+	            <li><a class="dropdown-item" href="/task-tracker/auth/logout">Log Out</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+
+	<div class="container-fluid">
+		 <div class="row">
+			 <div class="col">
+				 <hr />
+			 </div>
+		 </div>
+		 <table class="table table-hover table-bordered border-1 mt-3">
+			 <thead class="table-dark">
+				 <tr>
+					 <th>Actions</th>
+					 <th>Id</th>
+					 <th>Description</th>
+					 <th>Status</th>
+					 <th>Created At</th>
+					 <th>Updated At</th>
+				 </tr>
+			 </thead>
+			 <tbody>
+				 <tr th:each="item : ${taskItems}" th:class="${item.status} ? 'table-success' : ''">
+					 <td>
+						 <div class="btn-group btn-group-sm" role="group">
+								 <a th:href="@{/task-tracker/task-control/edit{id}(id=${item.id})}">
+								 	<i class="bi bi-pencil-square btn btn-outline-primary btn-sm"></i></a>
+								 	
+								 <a th:href="@{/task-tracker/task-control/delete{id}(id=${item.id})}" style="text-decoration: none;">
+									<i class="bi bi-trash3-fill btn btn-outline-danger btn-sm"></i> </a>
+					 	 </div>
+					 </td>
+					 <td th:text="${item.id}"></td>
+					 <td th:text="${item.taskDescription}"></td>
+					 <td>
+						 <span th:if="${item.status} == true" th:text="Done"></span>
+						 <span th:unless="${item.status} == true" th:text="Pending"></span>
+					 </td>
+					 <td th:text="${#temporals.format(item.createdDateTime, 'dd-MM-yyyy HH:mm')}"></td>
+					 <td th:text="${#temporals.format(item.updatedDateTime, 'dd-MM-yyyy HH:mm')}"></td>
+				 </tr>
+			 </tbody>
+		 </table>
+		 <div class="row">
+			<a href="/task-tracker/task-control/add-task" style="text-decoration: none;">
+				<div class="d-grid gap-2 col-6 mx-auto">
+				  	<button type="button" class="btn btn-outline-success">Add Task</button>
+			 	</div>
+			 </a>
+		 </div>
+		 
+	</div>
+	
+	<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js}"></script>
+</body>
+</html>

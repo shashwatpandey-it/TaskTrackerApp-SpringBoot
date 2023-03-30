@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2023-02-28T10:38:56.119+05:30  INFO 17060 --- [restartedMain] c.t.TaskTrackerApplication               : Starting TaskTrackerApplication using Java 17.0.5 with PID 17060 (C:\Users\Shashwat Pandey\sts-workspace\TaskTrackerApp\target\classes started by Shashwat Pandey in C:\Users\Shashwat Pandey\sts-workspace\TaskTrackerApp)
 2023-02-28T10:38:56.134+05:30  INFO 17060 --- [restartedMain] c.t.TaskTrackerApplication               : No active profile set, falling back to 1 default profile: "default"
 2023-02-28T10:38:56.263+05:30  INFO 17060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
@@ -10435,10 +10436,135 @@ java.sql.SQLException: Field 'is_complete' doesn't have a default value
 	at jdk.proxy43/jdk.proxy43.$Proxy268.save(Unknown Source) ~[na:na]
 	at com.tasktrackerapplication.services.TaskService.save(TaskService.java:24) ~[classes/:na]
 	at com.tasktrackerapplication.controllers.TaskFormController.createTask(TaskFormController.java:40) ~[classes/:na]
+=======
+2023-03-30T00:01:32.313+05:30  INFO 15616 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-30T00:01:32.354+05:30  INFO 15616 --- [Thread-9] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-30T00:01:32.357+05:30  WARN 15616 --- [Thread-9] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+2023-03-30T00:01:32.364+05:30  INFO 15616 --- [Thread-9] o.j.dashboard.JobRunrDashboardWebServer  : JobRunr dashboard stopped
+2023-03-30T00:01:32.364+05:30  INFO 15616 --- [Thread-9] org.jobrunr.server.BackgroundJobServer   : BackgroundJobServer and BackgroundJobPerformers - stopping (waiting for all jobs to complete - max 10 seconds)
+2023-03-30T00:01:32.415+05:30  INFO 15616 --- [Thread-9] org.jobrunr.server.BackgroundJobServer   : BackgroundJobServer and BackgroundJobPerformers stopped
+2023-03-30T00:01:32.416+05:30  INFO 15616 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-30T00:01:32.417+05:30  INFO 15616 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-03-30T00:01:32.421+05:30  INFO 15616 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-03-30T00:01:32.523+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : Starting TaskTrackerApplication using Java 17.0.5 with PID 15616 (C:\Users\Shashwat Pandey\sts-workspace\TaskTrackerApp\target\classes started by Shashwat Pandey in C:\Users\Shashwat Pandey\sts-workspace\TaskTrackerApp)
+2023-03-30T00:01:32.523+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-30T00:01:33.013+05:30  INFO 15616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-30T00:01:33.028+05:30  INFO 15616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-03-30T00:01:33.169+05:30  INFO 15616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-30T00:01:33.170+05:30  INFO 15616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-30T00:01:33.170+05:30  INFO 15616 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-30T00:01:33.192+05:30  INFO 15616 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-30T00:01:33.192+05:30  INFO 15616 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 666 ms
+2023-03-30T00:01:33.281+05:30  INFO 15616 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-30T00:01:33.285+05:30  WARN 15616 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-30T00:01:33.290+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-03-30T00:01:33.304+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56a28352
+2023-03-30T00:01:33.304+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-03-30T00:01:33.306+05:30  INFO 15616 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-03-30T00:01:33.396+05:30  INFO 15616 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-30T00:01:33.396+05:30  INFO 15616 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-30T00:01:33.476+05:30 DEBUG 15616 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthenticationFilter urls=[/*] order=2147483647
+2023-03-30T00:01:33.477+05:30 DEBUG 15616 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2023-03-30T00:01:33.478+05:30 DEBUG 15616 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'serverHttpObservationFilter' configured for use
+2023-03-30T00:01:33.615+05:30  WARN 15616 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30T00:01:33.649+05:30  INFO 15616 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-30T00:01:33.665+05:30 DEBUG 15616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 13 mappings in 'requestMappingHandlerMapping'
+2023-03-30T00:01:33.726+05:30 DEBUG 15616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-03-30T00:01:33.791+05:30  INFO 15616 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30T00:01:33.807+05:30  INFO 15616 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8b3afe4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@630302e5, org.springframework.security.web.context.SecurityContextHolderFilter@61506694, org.springframework.security.web.header.HeaderWriterFilter@67aeab0f, org.springframework.security.web.authentication.logout.LogoutFilter@7df2bf1, com.tasktrackerapplication.security.JwtAuthenticationFilter@4a1e1f75, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ce13758, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e051918, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6afba906, org.springframework.security.web.session.SessionManagementFilter@7e400d81, org.springframework.security.web.access.ExceptionTranslationFilter@16c56937, org.springframework.security.web.access.intercept.AuthorizationFilter@48f9db47]
+2023-03-30T00:01:33.838+05:30 DEBUG 15616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-03-30T00:01:33.847+05:30 DEBUG 15616 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-03-30T00:01:33.909+05:30  INFO 15616 --- [restartedMain] j.s.t.ScheduledThreadPoolJobRunrExecutor : ThreadManager of type 'ScheduledThreadPool' started
+2023-03-30T00:01:33.915+05:30  INFO 15616 --- [restartedMain] o.j.dashboard.JobRunrDashboardWebServer  : JobRunr Dashboard using MySqlStorageProvider started at http://localhost:8000/dashboard
+2023-03-30T00:01:33.947+05:30  INFO 15616 --- [backgroundjob-zookeeper-pool-8-thread-1] org.jobrunr.server.BackgroundJobServer   : JobRunr BackgroundJobServer (e7dc674a-c563-4118-9a15-40ddb3072bb9) using MySqlStorageProvider and 64 BackgroundJobPerformers started successfully
+2023-03-30T00:01:33.947+05:30  INFO 15616 --- [backgroundjob-zookeeper-pool-8-thread-1] org.jobrunr.server.ServerZooKeeper       : Server e7dc674a-c563-4118-9a15-40ddb3072bb9 is master (this BackgroundJobServer)
+2023-03-30T00:01:33.991+05:30  INFO 15616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-30T00:01:34.019+05:30  INFO 15616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-30T00:01:34.028+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : Started TaskTrackerApplication in 1.538 seconds (process running for 1044.827)
+2023-03-30T00:01:34.030+05:30  INFO 15616 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-03-30T00:02:15.411+05:30  INFO 15616 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-30T00:02:15.433+05:30  INFO 15616 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-30T00:02:15.436+05:30  WARN 15616 --- [Thread-15] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+2023-03-30T00:02:15.440+05:30  INFO 15616 --- [Thread-15] o.j.dashboard.JobRunrDashboardWebServer  : JobRunr dashboard stopped
+2023-03-30T00:02:15.441+05:30  INFO 15616 --- [Thread-15] org.jobrunr.server.BackgroundJobServer   : BackgroundJobServer and BackgroundJobPerformers - stopping (waiting for all jobs to complete - max 10 seconds)
+2023-03-30T00:02:15.488+05:30  INFO 15616 --- [Thread-15] org.jobrunr.server.BackgroundJobServer   : BackgroundJobServer and BackgroundJobPerformers stopped
+2023-03-30T00:02:15.490+05:30  INFO 15616 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-30T00:02:15.491+05:30  INFO 15616 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-03-30T00:02:15.495+05:30  INFO 15616 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-03-30T00:02:15.602+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : Starting TaskTrackerApplication using Java 17.0.5 with PID 15616 (C:\Users\Shashwat Pandey\sts-workspace\TaskTrackerApp\target\classes started by Shashwat Pandey in C:\Users\Shashwat Pandey\sts-workspace\TaskTrackerApp)
+2023-03-30T00:02:15.602+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-30T00:02:15.997+05:30  INFO 15616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-30T00:02:16.013+05:30  INFO 15616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2023-03-30T00:02:16.136+05:30  INFO 15616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-30T00:02:16.136+05:30  INFO 15616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-30T00:02:16.136+05:30  INFO 15616 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-30T00:02:16.159+05:30  INFO 15616 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-30T00:02:16.159+05:30  INFO 15616 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 554 ms
+2023-03-30T00:02:16.241+05:30  INFO 15616 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-30T00:02:16.245+05:30  WARN 15616 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-30T00:02:16.251+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-03-30T00:02:16.262+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@299f0097
+2023-03-30T00:02:16.262+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-03-30T00:02:16.263+05:30  INFO 15616 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-03-30T00:02:16.335+05:30  INFO 15616 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-30T00:02:16.336+05:30  INFO 15616 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-30T00:02:16.397+05:30 DEBUG 15616 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthenticationFilter urls=[/*] order=2147483647
+2023-03-30T00:02:16.397+05:30 DEBUG 15616 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2023-03-30T00:02:16.399+05:30 DEBUG 15616 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'serverHttpObservationFilter' configured for use
+2023-03-30T00:02:16.503+05:30  WARN 15616 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dailyDatabaseCleaningService': Invocation of init method failed
+2023-03-30T00:02:16.504+05:30  INFO 15616 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-30T00:02:16.504+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-03-30T00:02:16.526+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-03-30T00:02:16.526+05:30  INFO 15616 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-30T00:02:16.538+05:30  INFO 15616 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-30T00:02:16.562+05:30 ERROR 15616 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dailyDatabaseCleaningService': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:195) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:420) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1743) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.2.jar:3.0.2]
+	at com.tasktrackerapplication.TaskTrackerApplication.main(TaskTrackerApplication.java:9) ~[classes/:na]
+>>>>>>> development
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+<<<<<<< HEAD
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.4.jar:6.0.4]
 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.4.jar:6.0.4]
 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-6.0.4.jar:6.0.4]
@@ -10588,10 +10714,21 @@ java.sql.SQLException: Field 'is_complete' doesn't have a default value
 	at jdk.proxy4/jdk.proxy4.$Proxy105.save(Unknown Source) ~[na:na]
 	at com.tasktrackerapplication.services.TaskService.save(TaskService.java:24) ~[classes/:na]
 	at com.tasktrackerapplication.controllers.TaskFormController.createTask(TaskFormController.java:40) ~[classes/:na]
+=======
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.2.jar:3.0.2]
+Caused by: org.jobrunr.scheduling.cron.InvalidCronExpressionException: invalid hour field: "24". maximum allowed value for hour field is "23"
+	at org.jobrunr.scheduling.cron.CronFieldParser.parseLiteral(CronFieldParser.java:203) ~[jobrunr-5.3.3.jar:5.3.3]
+	at org.jobrunr.scheduling.cron.CronFieldParser.parse(CronFieldParser.java:120) ~[jobrunr-5.3.3.jar:5.3.3]
+	at org.jobrunr.scheduling.cron.CronExpression.create(CronExpression.java:125) ~[jobrunr-5.3.3.jar:5.3.3]
+	at org.jobrunr.scheduling.JobScheduler.scheduleRecurrently(JobScheduler.java:518) ~[jobrunr-5.3.3.jar:5.3.3]
+	at org.jobrunr.scheduling.JobScheduler.scheduleRecurrently(JobScheduler.java:481) ~[jobrunr-5.3.3.jar:5.3.3]
+	at com.tasktrackerapplication.services.DailyDatabaseCleaningService.scheduleExecutionOfDailyMaintenance(DailyDatabaseCleaningService.java:38) ~[classes/:na]
+>>>>>>> development
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+<<<<<<< HEAD
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.4.jar:6.0.4]
 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.4.jar:6.0.4]
 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-6.0.4.jar:6.0.4]
@@ -12713,3 +12850,766 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2023-02-28T23:50:49.682+05:30  INFO 16084 --- [RMI TCP Connection(50)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-02-28T23:50:49.696+05:30  INFO 16084 --- [RMI TCP Connection(50)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-02-28T23:50:49.710+05:30  INFO 16084 --- [RMI TCP Connection(50)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+=======
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:424) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:368) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:192) ~[spring-beans-6.0.4.jar:6.0.4]
+	... 23 common frames omitted
+
+2023-03-30T00:02:31.432+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : Starting TaskTrackerApplication using Java 17.0.5 with PID 15616 (C:\Users\Shashwat Pandey\sts-workspace\TaskTrackerApp\target\classes started by Shashwat Pandey in C:\Users\Shashwat Pandey\sts-workspace\TaskTrackerApp)
+2023-03-30T00:02:31.432+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-30T00:02:31.817+05:30  INFO 15616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-30T00:02:31.837+05:30  INFO 15616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2023-03-30T00:02:31.974+05:30  INFO 15616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-30T00:02:31.975+05:30  INFO 15616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-30T00:02:31.975+05:30  INFO 15616 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-30T00:02:32.002+05:30  INFO 15616 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-03-30T00:02:32.003+05:30  INFO 15616 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 569 ms
+2023-03-30T00:02:32.080+05:30  INFO 15616 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-30T00:02:32.083+05:30  WARN 15616 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-30T00:02:32.088+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-03-30T00:02:32.100+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@593cfa87
+2023-03-30T00:02:32.101+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-03-30T00:02:32.102+05:30  INFO 15616 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-03-30T00:02:32.176+05:30  INFO 15616 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-30T00:02:32.177+05:30  INFO 15616 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-30T00:02:32.239+05:30 DEBUG 15616 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthenticationFilter urls=[/*] order=2147483647
+2023-03-30T00:02:32.239+05:30 DEBUG 15616 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2023-03-30T00:02:32.240+05:30 DEBUG 15616 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'serverHttpObservationFilter' configured for use
+2023-03-30T00:02:32.376+05:30  WARN 15616 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30T00:02:32.396+05:30  INFO 15616 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-30T00:02:32.406+05:30 DEBUG 15616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 13 mappings in 'requestMappingHandlerMapping'
+2023-03-30T00:02:32.451+05:30 DEBUG 15616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-03-30T00:02:32.513+05:30  INFO 15616 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30T00:02:32.531+05:30  INFO 15616 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e476dec, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@386b3f7e, org.springframework.security.web.context.SecurityContextHolderFilter@de93457, org.springframework.security.web.header.HeaderWriterFilter@1ae5482c, org.springframework.security.web.authentication.logout.LogoutFilter@24cc05dd, com.tasktrackerapplication.security.JwtAuthenticationFilter@5a6e3e58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3eb8c4ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@eac5f78, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@cc5f290, org.springframework.security.web.session.SessionManagementFilter@a8c81b2, org.springframework.security.web.access.ExceptionTranslationFilter@57fc93c2, org.springframework.security.web.access.intercept.AuthorizationFilter@a794e58]
+2023-03-30T00:02:32.556+05:30 DEBUG 15616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-03-30T00:02:32.566+05:30 DEBUG 15616 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-03-30T00:02:32.627+05:30  INFO 15616 --- [restartedMain] j.s.t.ScheduledThreadPoolJobRunrExecutor : ThreadManager of type 'ScheduledThreadPool' started
+2023-03-30T00:02:32.632+05:30  INFO 15616 --- [restartedMain] o.j.dashboard.JobRunrDashboardWebServer  : JobRunr Dashboard using MySqlStorageProvider started at http://localhost:8000/dashboard
+2023-03-30T00:02:32.668+05:30  INFO 15616 --- [backgroundjob-zookeeper-pool-11-thread-1] org.jobrunr.server.BackgroundJobServer   : JobRunr BackgroundJobServer (cef779fb-0e21-42b9-bafa-13703d136b53) using MySqlStorageProvider and 64 BackgroundJobPerformers started successfully
+2023-03-30T00:02:32.668+05:30  INFO 15616 --- [backgroundjob-zookeeper-pool-11-thread-1] org.jobrunr.server.ServerZooKeeper       : Server cef779fb-0e21-42b9-bafa-13703d136b53 is master (this BackgroundJobServer)
+2023-03-30T00:02:32.705+05:30  INFO 15616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-30T00:02:32.729+05:30  INFO 15616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-30T00:02:32.739+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : Started TaskTrackerApplication in 1.336 seconds (process running for 1103.537)
+2023-03-30T00:02:32.742+05:30  INFO 15616 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-03-30T00:02:47.025+05:30  INFO 15616 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30T00:02:47.025+05:30  INFO 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-30T00:02:47.026+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-03-30T00:02:47.026+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-03-30T00:02:47.026+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-03-30T00:02:47.030+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4c40b32a
+2023-03-30T00:02:47.031+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@323500d9
+2023-03-30T00:02:47.032+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-03-30T00:02:47.032+05:30  INFO 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-03-30T00:02:47.095+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:02:47.095+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:02:47.096+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/index", parameters={}
+2023-03-30T00:02:47.097+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:02:47.101+05:30  INFO 15616 --- [http-nio-9000-exec-1] c.t.controllers.HomeController           : returned index page from home controller
+2023-03-30T00:02:47.104+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2023-03-30T00:02:47.127+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:47.155+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:47.156+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:47.156+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:47.156+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:02:47.157+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:47.157+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:47.158+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css", parameters={}
+2023-03-30T00:02:47.158+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:47.159+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:47.160+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:47.161+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:02:47.162+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:47.163+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:47.164+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:47.169+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:47.206+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:47.206+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:47.207+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47", parameters={masked}
+2023-03-30T00:02:47.207+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:47.212+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:47.240+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:02:47.241+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:02:47.242+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-03-30T00:02:47.242+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:02:47.245+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-03-30T00:02:47.246+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-03-30T00:02:47.248+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:02:47.249+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:02:48.840+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:02:48.841+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:02:48.842+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/task-control/add-task", parameters={}
+2023-03-30T00:02:48.842+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:02:48.844+05:30  INFO 15616 --- [http-nio-9000-exec-7] c.t.controllers.TaskFormController       : returned add task form page from taskform controller
+2023-03-30T00:02:48.846+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2023-03-30T00:02:48.855+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:48.881+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:48.881+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:48.882+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:48.882+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:48.883+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:02:48.883+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:02:48.884+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:48.884+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:48.889+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:48.890+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:48.937+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:02:48.938+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:02:48.939+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-03-30T00:02:48.940+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:02:48.941+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-03-30T00:02:48.942+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-03-30T00:02:48.944+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:02:48.945+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:02:57.092+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:02:57.093+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:02:57.094+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/task-tracker/task-control/task", parameters={masked}
+2023-03-30T00:02:57.094+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:02:57.110+05:30  INFO 15616 --- [http-nio-9000-exec-4] c.t.controllers.TaskFormController       : job scheduled
+2023-03-30T00:02:57.123+05:30  INFO 15616 --- [http-nio-9000-exec-4] c.t.controllers.TaskFormController       : saved a new task to database
+2023-03-30T00:02:57.126+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2023-03-30T00:02:57.127+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2023-03-30T00:02:57.144+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:02:57.144+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:02:57.145+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/index", parameters={}
+2023-03-30T00:02:57.145+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:02:57.153+05:30  INFO 15616 --- [http-nio-9000-exec-5] c.t.controllers.HomeController           : returned index page from home controller
+2023-03-30T00:02:57.154+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2023-03-30T00:02:57.165+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:57.191+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:57.191+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:57.191+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:57.191+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:57.192+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:02:57.192+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css", parameters={}
+2023-03-30T00:02:57.192+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:57.192+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:57.193+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:57.194+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:57.194+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:02:57.195+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:57.196+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:57.197+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:57.200+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:57.237+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:57.237+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:57.238+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47", parameters={masked}
+2023-03-30T00:02:57.238+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:57.241+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:57.274+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:02:57.274+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:02:57.275+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-03-30T00:02:57.275+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:02:57.277+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-03-30T00:02:57.277+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-03-30T00:02:57.278+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:02:57.278+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:02:59.111+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:02:59.112+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:02:59.113+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/task-control/add-task", parameters={}
+2023-03-30T00:02:59.114+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:02:59.115+05:30  INFO 15616 --- [http-nio-9000-exec-2] c.t.controllers.TaskFormController       : returned add task form page from taskform controller
+2023-03-30T00:02:59.116+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2023-03-30T00:02:59.121+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:59.148+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:59.148+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:59.149+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:59.149+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:59.149+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:02:59.149+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:02:59.150+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:59.150+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:02:59.155+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:59.155+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:02:59.200+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:02:59.201+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:02:59.201+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-03-30T00:02:59.201+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:02:59.202+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-03-30T00:02:59.203+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-03-30T00:02:59.204+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:02:59.204+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:03:05.758+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:03:05.759+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:03:05.759+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/task-tracker/task-control/task", parameters={masked}
+2023-03-30T00:03:05.760+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:03:05.770+05:30  INFO 15616 --- [http-nio-9000-exec-5] c.t.controllers.TaskFormController       : job scheduled
+2023-03-30T00:03:05.778+05:30  INFO 15616 --- [http-nio-9000-exec-5] c.t.controllers.TaskFormController       : saved a new task to database
+2023-03-30T00:03:05.779+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2023-03-30T00:03:05.779+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2023-03-30T00:03:05.796+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:05.796+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:05.797+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/index", parameters={}
+2023-03-30T00:03:05.797+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:05.802+05:30  INFO 15616 --- [http-nio-9000-exec-7] c.t.controllers.HomeController           : returned index page from home controller
+2023-03-30T00:03:05.803+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2023-03-30T00:03:05.810+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:05.836+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:05.836+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:05.836+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:05.837+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:05.837+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:05.837+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:05.837+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:03:05.838+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css", parameters={}
+2023-03-30T00:03:05.837+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:03:05.838+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:05.838+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:05.838+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:05.841+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:05.842+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:05.843+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:05.883+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:05.883+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:05.884+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47", parameters={masked}
+2023-03-30T00:03:05.887+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:05.891+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:05.921+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:05.922+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:05.922+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-03-30T00:03:05.922+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:05.924+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-03-30T00:03:05.924+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-03-30T00:03:05.925+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:03:05.925+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:03:07.228+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#editTaskFotm(Integer, Model)
+2023-03-30T00:03:07.229+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#editTaskFotm(Integer, Model)
+2023-03-30T00:03:07.230+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/task-control/edit1202", parameters={}
+2023-03-30T00:03:07.230+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#editTaskFotm(Integer, Model)
+2023-03-30T00:03:07.246+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2023-03-30T00:03:07.253+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:07.271+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:07.271+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:07.271+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:07.272+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:07.272+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:03:07.272+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:03:07.273+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:07.273+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:07.276+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:07.276+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:07.320+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:07.321+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:07.322+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-03-30T00:03:07.323+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:07.324+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-03-30T00:03:07.324+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-03-30T00:03:07.325+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:03:07.326+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:03:10.163+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#editTask(Integer, TaskModel, Model)
+2023-03-30T00:03:10.165+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#editTask(Integer, TaskModel, Model)
+2023-03-30T00:03:10.165+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/task-tracker/task-control/task/1202", parameters={masked}
+2023-03-30T00:03:10.165+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#editTask(Integer, TaskModel, Model)
+2023-03-30T00:03:10.177+05:30  INFO 15616 --- [http-nio-9000-exec-6] c.t.controllers.TaskFormController       : scheduled job deleted as the task was completed...
+2023-03-30T00:03:10.193+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2023-03-30T00:03:10.194+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2023-03-30T00:03:10.210+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:10.210+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:10.211+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/index", parameters={}
+2023-03-30T00:03:10.211+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:10.214+05:30  INFO 15616 --- [http-nio-9000-exec-10] c.t.controllers.HomeController           : returned index page from home controller
+2023-03-30T00:03:10.215+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2023-03-30T00:03:10.224+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:10.250+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:10.250+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:10.250+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:10.250+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:10.251+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:10.251+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:10.251+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:03:10.251+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:03:10.251+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css", parameters={}
+2023-03-30T00:03:10.251+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:10.252+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:10.252+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:10.255+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:10.256+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:10.256+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:10.298+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:10.298+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:10.298+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47", parameters={masked}
+2023-03-30T00:03:10.299+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:10.301+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:10.328+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:10.328+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:10.328+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-03-30T00:03:10.328+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:10.329+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-03-30T00:03:10.330+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-03-30T00:03:10.331+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:03:10.331+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:03:26.244+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:03:26.245+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:03:26.246+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/task-control/add-task", parameters={}
+2023-03-30T00:03:26.246+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:03:26.247+05:30  INFO 15616 --- [http-nio-9000-exec-6] c.t.controllers.TaskFormController       : returned add task form page from taskform controller
+2023-03-30T00:03:26.248+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2023-03-30T00:03:26.253+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:26.284+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:26.284+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:26.284+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:26.284+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:26.284+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:03:26.284+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:03:26.285+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:26.285+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:26.289+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:26.290+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:26.335+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:26.336+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:26.336+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-03-30T00:03:26.336+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:26.338+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-03-30T00:03:26.339+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-03-30T00:03:26.342+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:03:26.342+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:03:30.247+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:03:30.248+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:03:30.248+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/task-tracker/task-control/task", parameters={masked}
+2023-03-30T00:03:30.248+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:03:30.263+05:30  INFO 15616 --- [http-nio-9000-exec-2] c.t.controllers.TaskFormController       : job scheduled
+2023-03-30T00:03:30.270+05:30  INFO 15616 --- [http-nio-9000-exec-2] c.t.controllers.TaskFormController       : saved a new task to database
+2023-03-30T00:03:30.271+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2023-03-30T00:03:30.272+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2023-03-30T00:03:30.289+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:30.290+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:30.290+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/index", parameters={}
+2023-03-30T00:03:30.290+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:30.296+05:30  INFO 15616 --- [http-nio-9000-exec-1] c.t.controllers.HomeController           : returned index page from home controller
+2023-03-30T00:03:30.297+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2023-03-30T00:03:30.303+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:30.339+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:30.340+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:30.341+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:03:30.341+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:30.342+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:30.342+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:03:30.342+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:30.341+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:30.343+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:30.344+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:30.345+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css", parameters={}
+2023-03-30T00:03:30.345+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:30.349+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:30.350+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:30.353+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:30.388+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:30.388+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:30.388+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47", parameters={masked}
+2023-03-30T00:03:30.388+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:30.390+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:30.417+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:30.418+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:30.418+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-03-30T00:03:30.418+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:03:30.419+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-03-30T00:03:30.419+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-03-30T00:03:30.420+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:03:30.420+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:03:33.689+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:33.689+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:33.690+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/index", parameters={}
+2023-03-30T00:03:33.691+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:33.695+05:30  INFO 15616 --- [http-nio-9000-exec-10] c.t.controllers.HomeController           : returned index page from home controller
+2023-03-30T00:03:33.696+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8]
+2023-03-30T00:03:33.700+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:33.751+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:33.751+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:33.751+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:33.751+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:33.751+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:33.751+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:33.752+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:03:33.752+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css", parameters={}
+2023-03-30T00:03:33.752+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:03:33.752+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:33.752+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:33.752+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:33.755+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:33.755+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:33.756+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:35.019+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:03:35.020+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:03:35.020+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/task-control/add-task", parameters={}
+2023-03-30T00:03:35.021+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:03:35.022+05:30  INFO 15616 --- [http-nio-9000-exec-1] c.t.controllers.TaskFormController       : returned add task form page from taskform controller
+2023-03-30T00:03:35.022+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8]
+2023-03-30T00:03:35.026+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:35.084+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:35.084+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:35.084+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:35.084+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:35.084+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:03:35.084+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:03:35.085+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:35.085+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:35.088+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:35.088+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:39.471+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:03:39.472+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:03:39.472+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/task-tracker/task-control/task", parameters={masked}
+2023-03-30T00:03:39.473+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:03:39.480+05:30  INFO 15616 --- [http-nio-9000-exec-10] c.t.controllers.TaskFormController       : job scheduled
+2023-03-30T00:03:39.488+05:30  INFO 15616 --- [http-nio-9000-exec-10] c.t.controllers.TaskFormController       : saved a new task to database
+2023-03-30T00:03:39.488+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2023-03-30T00:03:39.489+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2023-03-30T00:03:39.509+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:39.510+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:39.510+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/index", parameters={}
+2023-03-30T00:03:39.510+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:39.518+05:30  INFO 15616 --- [http-nio-9000-exec-3] c.t.controllers.HomeController           : returned index page from home controller
+2023-03-30T00:03:39.519+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8]
+2023-03-30T00:03:39.524+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:39.580+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:39.580+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:39.580+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:39.580+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:39.581+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:03:39.581+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css", parameters={}
+2023-03-30T00:03:39.582+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:39.582+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:39.584+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:39.584+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:39.584+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:03:39.584+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:39.585+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:39.585+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:39.590+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:40.468+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:03:40.469+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:03:40.469+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/task-control/add-task", parameters={}
+2023-03-30T00:03:40.469+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#taskForm(TaskModel)
+2023-03-30T00:03:40.470+05:30  INFO 15616 --- [http-nio-9000-exec-9] c.t.controllers.TaskFormController       : returned add task form page from taskform controller
+2023-03-30T00:03:40.470+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8]
+2023-03-30T00:03:40.473+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:40.516+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:40.516+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:40.517+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:40.517+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:40.517+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:03:40.517+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:03:40.517+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:40.517+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:40.520+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:40.520+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:44.462+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:03:44.462+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:03:44.463+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/task-tracker/task-control/task", parameters={masked}
+2023-03-30T00:03:44.463+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#createTask(TaskModel, Model, HttpServletRequest)
+2023-03-30T00:03:44.473+05:30  INFO 15616 --- [http-nio-9000-exec-5] c.t.controllers.TaskFormController       : job scheduled
+2023-03-30T00:03:44.478+05:30  INFO 15616 --- [http-nio-9000-exec-5] c.t.controllers.TaskFormController       : saved a new task to database
+2023-03-30T00:03:44.479+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2023-03-30T00:03:44.480+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2023-03-30T00:03:44.499+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:44.500+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:44.500+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/index", parameters={}
+2023-03-30T00:03:44.500+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:44.505+05:30  INFO 15616 --- [http-nio-9000-exec-6] c.t.controllers.HomeController           : returned index page from home controller
+2023-03-30T00:03:44.506+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8]
+2023-03-30T00:03:44.510+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:44.560+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:44.560+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:44.560+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:44.561+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:44.561+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:44.561+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:44.561+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css", parameters={}
+2023-03-30T00:03:44.561+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:03:44.561+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:03:44.561+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:44.561+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:44.561+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:44.565+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:44.566+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:44.567+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:46.321+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#editTaskFotm(Integer, Model)
+2023-03-30T00:03:46.322+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#editTaskFotm(Integer, Model)
+2023-03-30T00:03:46.322+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/task-control/edit1206", parameters={}
+2023-03-30T00:03:46.323+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#editTaskFotm(Integer, Model)
+2023-03-30T00:03:46.328+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8]
+2023-03-30T00:03:46.333+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:46.390+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:46.390+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:46.390+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:46.390+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:46.390+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:03:46.390+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:03:46.391+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:46.391+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:46.394+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:46.394+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:49.225+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#editTask(Integer, TaskModel, Model)
+2023-03-30T00:03:49.226+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#editTask(Integer, TaskModel, Model)
+2023-03-30T00:03:49.227+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/task-tracker/task-control/task/1206", parameters={masked}
+2023-03-30T00:03:49.227+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.TaskFormController#editTask(Integer, TaskModel, Model)
+2023-03-30T00:03:49.237+05:30  INFO 15616 --- [http-nio-9000-exec-8] c.t.controllers.TaskFormController       : scheduled job deleted as the task was completed...
+2023-03-30T00:03:49.241+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2023-03-30T00:03:49.242+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2023-03-30T00:03:49.257+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:49.258+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:49.258+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/index", parameters={}
+2023-03-30T00:03:49.258+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:03:49.262+05:30  INFO 15616 --- [http-nio-9000-exec-7] c.t.controllers.HomeController           : returned index page from home controller
+2023-03-30T00:03:49.264+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8]
+2023-03-30T00:03:49.271+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:49.325+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:49.325+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:49.325+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:49.325+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:49.326+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css", parameters={}
+2023-03-30T00:03:49.326+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:03:49.326+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:49.326+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:49.326+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:49.327+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:49.327+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:03:49.327+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:03:49.329+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:49.330+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:03:49.332+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:10:30.890+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:10:30.891+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:10:30.891+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/index", parameters={}
+2023-03-30T00:10:30.892+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:10:30.895+05:30  INFO 15616 --- [http-nio-9000-exec-1] c.t.controllers.HomeController           : returned index page from home controller
+2023-03-30T00:10:30.895+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2023-03-30T00:10:30.901+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:10:30.926+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:30.926+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:30.926+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:30.927+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:30.926+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:30.927+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:30.927+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css", parameters={}
+2023-03-30T00:10:30.927+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:10:30.927+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:10:30.927+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:30.927+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:30.927+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:30.931+05:30 DEBUG 15616 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:10:30.931+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:10:30.933+05:30 DEBUG 15616 --- [http-nio-9000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:10:30.981+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:10:30.982+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:10:30.982+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-03-30T00:10:30.983+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:10:30.986+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-03-30T00:10:30.986+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-03-30T00:10:30.987+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:10:30.987+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-30T00:10:38.567+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:10:38.568+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:10:38.568+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/index", parameters={}
+2023-03-30T00:10:38.569+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.HomeController#home(HttpServletRequest)
+2023-03-30T00:10:38.574+05:30  INFO 15616 --- [http-nio-9000-exec-4] c.t.controllers.HomeController           : returned index page from home controller
+2023-03-30T00:10:38.574+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8]
+2023-03-30T00:10:38.578+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:10:38.640+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:38.640+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:38.640+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:38.640+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:38.640+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:38.641+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:38.641+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:10:38.641+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:10:38.641+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:38.641+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css", parameters={}
+2023-03-30T00:10:38.641+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:38.641+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:10:38.644+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:10:38.645+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:10:38.645+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:11:29.188+05:30  INFO 15616 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-30T00:11:29.213+05:30  INFO 15616 --- [Thread-21] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-30T00:11:29.214+05:30  INFO 15616 --- [Thread-21] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-30T00:11:29.217+05:30  WARN 15616 --- [Thread-21] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-5 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+2023-03-30T00:11:29.222+05:30  INFO 15616 --- [Thread-21] o.j.dashboard.JobRunrDashboardWebServer  : JobRunr dashboard stopped
+2023-03-30T00:11:29.223+05:30  INFO 15616 --- [Thread-21] org.jobrunr.server.BackgroundJobServer   : BackgroundJobServer and BackgroundJobPerformers - stopping (waiting for all jobs to complete - max 10 seconds)
+2023-03-30T00:11:29.274+05:30  INFO 15616 --- [Thread-21] org.jobrunr.server.BackgroundJobServer   : BackgroundJobServer and BackgroundJobPerformers stopped
+2023-03-30T00:11:29.276+05:30  INFO 15616 --- [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-30T00:11:29.277+05:30  INFO 15616 --- [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-03-30T00:11:29.282+05:30  INFO 15616 --- [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-03-30T00:11:29.399+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : Starting TaskTrackerApplication using Java 17.0.5 with PID 15616 (C:\Users\Shashwat Pandey\sts-workspace\TaskTrackerApp\target\classes started by Shashwat Pandey in C:\Users\Shashwat Pandey\sts-workspace\TaskTrackerApp)
+2023-03-30T00:11:29.399+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-30T00:11:29.797+05:30  INFO 15616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-30T00:11:29.812+05:30  INFO 15616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2023-03-30T00:11:29.970+05:30  INFO 15616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-30T00:11:29.970+05:30  INFO 15616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-30T00:11:29.971+05:30  INFO 15616 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-30T00:11:30.010+05:30  INFO 15616 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-03-30T00:11:30.010+05:30  INFO 15616 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 609 ms
+2023-03-30T00:11:30.090+05:30  INFO 15616 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-30T00:11:30.093+05:30  WARN 15616 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-30T00:11:30.098+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-03-30T00:11:30.112+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b844638
+2023-03-30T00:11:30.112+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-03-30T00:11:30.114+05:30  INFO 15616 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-03-30T00:11:30.182+05:30  INFO 15616 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-30T00:11:30.182+05:30  INFO 15616 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-30T00:11:30.247+05:30 DEBUG 15616 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthenticationFilter urls=[/*] order=2147483647
+2023-03-30T00:11:30.247+05:30 DEBUG 15616 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2023-03-30T00:11:30.248+05:30 DEBUG 15616 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'serverHttpObservationFilter' configured for use
+2023-03-30T00:11:30.357+05:30  WARN 15616 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30T00:11:30.377+05:30  INFO 15616 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-30T00:11:30.390+05:30 DEBUG 15616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 13 mappings in 'requestMappingHandlerMapping'
+2023-03-30T00:11:30.443+05:30 DEBUG 15616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-03-30T00:11:30.509+05:30  INFO 15616 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30T00:11:30.525+05:30  INFO 15616 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18577a77, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14806efb, org.springframework.security.web.context.SecurityContextHolderFilter@32b178b1, org.springframework.security.web.header.HeaderWriterFilter@10467a49, org.springframework.security.web.authentication.logout.LogoutFilter@7e807312, com.tasktrackerapplication.security.JwtAuthenticationFilter@4ac65e85, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27aa6f44, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41dddca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74bf6c7c, org.springframework.security.web.session.SessionManagementFilter@a193152, org.springframework.security.web.access.ExceptionTranslationFilter@2e777f3c, org.springframework.security.web.access.intercept.AuthorizationFilter@3540edad]
+2023-03-30T00:11:30.555+05:30 DEBUG 15616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-03-30T00:11:30.563+05:30 DEBUG 15616 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-03-30T00:11:30.625+05:30  INFO 15616 --- [restartedMain] j.s.t.ScheduledThreadPoolJobRunrExecutor : ThreadManager of type 'ScheduledThreadPool' started
+2023-03-30T00:11:30.632+05:30  INFO 15616 --- [restartedMain] o.j.dashboard.JobRunrDashboardWebServer  : JobRunr Dashboard using MySqlStorageProvider started at http://localhost:8000/dashboard
+2023-03-30T00:11:30.666+05:30  INFO 15616 --- [backgroundjob-zookeeper-pool-14-thread-1] org.jobrunr.server.BackgroundJobServer   : JobRunr BackgroundJobServer (6ad6dca4-d4a6-4e46-b793-9c8219eb28b0) using MySqlStorageProvider and 64 BackgroundJobPerformers started successfully
+2023-03-30T00:11:30.666+05:30  INFO 15616 --- [backgroundjob-zookeeper-pool-14-thread-1] org.jobrunr.server.ServerZooKeeper       : Server 6ad6dca4-d4a6-4e46-b793-9c8219eb28b0 is master (this BackgroundJobServer)
+2023-03-30T00:11:30.707+05:30  INFO 15616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-30T00:11:30.731+05:30  INFO 15616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-30T00:11:30.740+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : Started TaskTrackerApplication in 1.379 seconds (process running for 1641.538)
+2023-03-30T00:11:30.742+05:30  INFO 15616 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-03-30T00:11:42.201+05:30  INFO 15616 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30T00:11:42.201+05:30  INFO 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-30T00:11:42.202+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-03-30T00:11:42.202+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-03-30T00:11:42.202+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-03-30T00:11:42.203+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1ce52b79
+2023-03-30T00:11:42.204+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1a735a83
+2023-03-30T00:11:42.205+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-03-30T00:11:42.205+05:30  INFO 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-03-30T00:11:42.284+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:11:42.284+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:11:42.285+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap-icons/1.10.2/font/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47", parameters={masked}
+2023-03-30T00:11:42.285+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:11:42.288+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:13:14.670+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.AuthController#logout(HttpServletRequest, HttpServletResponse)
+2023-03-30T00:13:14.671+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/auth/logout", parameters={}
+2023-03-30T00:13:14.672+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.AuthController#logout(HttpServletRequest, HttpServletResponse)
+2023-03-30T00:13:14.683+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2023-03-30T00:13:14.684+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2023-03-30T00:13:14.690+05:30  INFO 15616 --- [http-nio-9000-exec-4] o.s.web.filter.OncePerRequestFilter      : either no cookie found or no token inside the cookie...
+2023-03-30T00:13:14.691+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.AuthController#loginPage()
+2023-03-30T00:13:14.692+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/auth/entry/login", parameters={}
+2023-03-30T00:13:14.692+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.AuthController#loginPage()
+2023-03-30T00:13:14.693+05:30  INFO 15616 --- [http-nio-9000-exec-4] c.t.controllers.AuthController           : login page
+2023-03-30T00:13:14.697+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2023-03-30T00:13:14.714+05:30 DEBUG 15616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:13:14.727+05:30  INFO 15616 --- [http-nio-9000-exec-5] o.s.web.filter.OncePerRequestFilter      : either no cookie found or no token inside the cookie...
+2023-03-30T00:13:14.727+05:30  INFO 15616 --- [http-nio-9000-exec-6] o.s.web.filter.OncePerRequestFilter      : either no cookie found or no token inside the cookie...
+2023-03-30T00:13:14.727+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:13:14.727+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:13:14.728+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:13:14.728+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:13:14.728+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:13:14.728+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:13:14.728+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:13:14.728+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:13:14.733+05:30 DEBUG 15616 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:13:14.733+05:30 DEBUG 15616 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:13:14.772+05:30  INFO 15616 --- [http-nio-9000-exec-7] o.s.web.filter.OncePerRequestFilter      : either no cookie found or no token inside the cookie...
+2023-03-30T00:13:14.773+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:13:14.773+05:30 DEBUG 15616 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-30T00:13:22.064+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.AuthController#logout(HttpServletRequest, HttpServletResponse)
+2023-03-30T00:13:22.066+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/auth/logout", parameters={}
+2023-03-30T00:13:22.066+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.AuthController#logout(HttpServletRequest, HttpServletResponse)
+2023-03-30T00:13:22.068+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2023-03-30T00:13:22.068+05:30 DEBUG 15616 --- [http-nio-9000-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2023-03-30T00:13:22.078+05:30  INFO 15616 --- [http-nio-9000-exec-1] o.s.web.filter.OncePerRequestFilter      : either no cookie found or no token inside the cookie...
+2023-03-30T00:13:22.079+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.AuthController#loginPage()
+2023-03-30T00:13:22.079+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/task-tracker/auth/entry/login", parameters={}
+2023-03-30T00:13:22.080+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tasktrackerapplication.controllers.AuthController#loginPage()
+2023-03-30T00:13:22.081+05:30  INFO 15616 --- [http-nio-9000-exec-1] c.t.controllers.AuthController           : login page
+2023-03-30T00:13:22.082+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8]
+2023-03-30T00:13:22.085+05:30 DEBUG 15616 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:13:22.134+05:30  INFO 15616 --- [http-nio-9000-exec-2] o.s.web.filter.OncePerRequestFilter      : either no cookie found or no token inside the cookie...
+2023-03-30T00:13:22.135+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:13:22.135+05:30  INFO 15616 --- [http-nio-9000-exec-3] o.s.web.filter.OncePerRequestFilter      : either no cookie found or no token inside the cookie...
+2023-03-30T00:13:22.135+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:13:22.136+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:13:22.136+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/css/bootstrap.css", parameters={}
+2023-03-30T00:13:22.136+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:13:22.136+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:13:22.137+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js", parameters={}
+2023-03-30T00:13:22.137+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-03-30T00:13:22.141+05:30 DEBUG 15616 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:13:22.142+05:30 DEBUG 15616 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-30T00:13:42.757+05:30  INFO 15616 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-30T00:13:42.772+05:30  INFO 15616 --- [Thread-30] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-30T00:13:42.772+05:30  INFO 15616 --- [Thread-30] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-30T00:13:42.775+05:30  WARN 15616 --- [Thread-30] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-6 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+2023-03-30T00:13:42.779+05:30  INFO 15616 --- [Thread-30] o.j.dashboard.JobRunrDashboardWebServer  : JobRunr dashboard stopped
+2023-03-30T00:13:42.779+05:30  INFO 15616 --- [Thread-30] org.jobrunr.server.BackgroundJobServer   : BackgroundJobServer and BackgroundJobPerformers - stopping (waiting for all jobs to complete - max 10 seconds)
+2023-03-30T00:13:42.816+05:30  INFO 15616 --- [Thread-30] org.jobrunr.server.BackgroundJobServer   : BackgroundJobServer and BackgroundJobPerformers stopped
+2023-03-30T00:13:42.817+05:30  INFO 15616 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-30T00:13:42.818+05:30  INFO 15616 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-03-30T00:13:42.822+05:30  INFO 15616 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-03-30T00:13:42.924+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : Starting TaskTrackerApplication using Java 17.0.5 with PID 15616 (C:\Users\Shashwat Pandey\sts-workspace\TaskTrackerApp\target\classes started by Shashwat Pandey in C:\Users\Shashwat Pandey\sts-workspace\TaskTrackerApp)
+2023-03-30T00:13:42.924+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-30T00:13:43.396+05:30  INFO 15616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-30T00:13:43.414+05:30  INFO 15616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2023-03-30T00:13:43.617+05:30  INFO 15616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-30T00:13:43.618+05:30  INFO 15616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-30T00:13:43.618+05:30  INFO 15616 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-30T00:13:43.650+05:30  INFO 15616 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-03-30T00:13:43.650+05:30  INFO 15616 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 724 ms
+2023-03-30T00:13:43.743+05:30  INFO 15616 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-30T00:13:43.747+05:30  WARN 15616 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-30T00:13:43.752+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-03-30T00:13:43.764+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@958d565
+2023-03-30T00:13:43.765+05:30  INFO 15616 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-03-30T00:13:43.766+05:30  INFO 15616 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-03-30T00:13:43.839+05:30  INFO 15616 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-30T00:13:43.839+05:30  INFO 15616 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-30T00:13:43.913+05:30 DEBUG 15616 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthenticationFilter urls=[/*] order=2147483647
+2023-03-30T00:13:43.914+05:30 DEBUG 15616 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2023-03-30T00:13:43.914+05:30 DEBUG 15616 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'serverHttpObservationFilter' configured for use
+2023-03-30T00:13:44.045+05:30  WARN 15616 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30T00:13:44.067+05:30  INFO 15616 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-30T00:13:44.085+05:30 DEBUG 15616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 13 mappings in 'requestMappingHandlerMapping'
+2023-03-30T00:13:44.134+05:30 DEBUG 15616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-03-30T00:13:44.208+05:30  INFO 15616 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30T00:13:44.225+05:30  INFO 15616 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5f4d35c4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16380739, org.springframework.security.web.context.SecurityContextHolderFilter@233faba2, org.springframework.security.web.header.HeaderWriterFilter@7d04ad, org.springframework.security.web.authentication.logout.LogoutFilter@4bbb15f, com.tasktrackerapplication.security.JwtAuthenticationFilter@7ad48cb1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@100eb5bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@783e937b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cab60ac, org.springframework.security.web.session.SessionManagementFilter@5a3f049e, org.springframework.security.web.access.ExceptionTranslationFilter@3ec1b876, org.springframework.security.web.access.intercept.AuthorizationFilter@5542b5fd]
+2023-03-30T00:13:44.259+05:30 DEBUG 15616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-03-30T00:13:44.270+05:30 DEBUG 15616 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-03-30T00:13:44.321+05:30  INFO 15616 --- [restartedMain] j.s.t.ScheduledThreadPoolJobRunrExecutor : ThreadManager of type 'ScheduledThreadPool' started
+2023-03-30T00:13:44.327+05:30  INFO 15616 --- [restartedMain] o.j.dashboard.JobRunrDashboardWebServer  : JobRunr Dashboard using MySqlStorageProvider started at http://localhost:8000/dashboard
+2023-03-30T00:13:44.354+05:30  INFO 15616 --- [backgroundjob-zookeeper-pool-17-thread-1] org.jobrunr.server.BackgroundJobServer   : JobRunr BackgroundJobServer (23a31dcf-535a-43e4-b02b-983d3aca6322) using MySqlStorageProvider and 64 BackgroundJobPerformers started successfully
+2023-03-30T00:13:44.355+05:30  INFO 15616 --- [backgroundjob-zookeeper-pool-17-thread-1] org.jobrunr.server.ServerZooKeeper       : Server 23a31dcf-535a-43e4-b02b-983d3aca6322 is master (this BackgroundJobServer)
+2023-03-30T00:13:44.405+05:30  INFO 15616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-30T00:13:44.431+05:30  INFO 15616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-30T00:13:44.440+05:30  INFO 15616 --- [restartedMain] c.t.TaskTrackerApplication               : Started TaskTrackerApplication in 1.549 seconds (process running for 1775.238)
+2023-03-30T00:13:44.443+05:30  INFO 15616 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-03-30T00:13:59.923+05:30  INFO 15616 --- [RMI TCP Connection(37)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-03-30T00:13:59.948+05:30  INFO 15616 --- [RMI TCP Connection(37)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-30T00:13:59.952+05:30  WARN 15616 --- [RMI TCP Connection(37)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-7 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+2023-03-30T00:13:59.956+05:30  INFO 15616 --- [RMI TCP Connection(37)-127.0.0.1] o.j.dashboard.JobRunrDashboardWebServer  : JobRunr dashboard stopped
+2023-03-30T00:13:59.957+05:30  INFO 15616 --- [RMI TCP Connection(37)-127.0.0.1] org.jobrunr.server.BackgroundJobServer   : BackgroundJobServer and BackgroundJobPerformers - stopping (waiting for all jobs to complete - max 10 seconds)
+2023-03-30T00:14:00.001+05:30  INFO 15616 --- [RMI TCP Connection(37)-127.0.0.1] org.jobrunr.server.BackgroundJobServer   : BackgroundJobServer and BackgroundJobPerformers stopped
+2023-03-30T00:14:00.004+05:30  INFO 15616 --- [RMI TCP Connection(37)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-30T00:14:00.005+05:30  INFO 15616 --- [RMI TCP Connection(37)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-03-30T00:14:00.012+05:30  INFO 15616 --- [RMI TCP Connection(37)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+>>>>>>> development

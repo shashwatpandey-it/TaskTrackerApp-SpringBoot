@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" xmlns:th="http:/www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>edit task form</title>
+	<link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.css}" />
+</head>
+<body class="bg-success" style="--bs-bg-opacity: .25">
+	<div class="container p-5">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<div class="card">
+				  <div class="card-header text-center fs-4">Edit Task</div>
+				  <div class="card-body">
+					  <form action="" th:action="@{/task-tracker/task-control/task/{id}(id=${task.id})}" th:object="${task}" method="post">
+						<div class="form-group my-4 mx-3">
+							<div class="my-4">
+								<label for="description" class="form-label fw-semibold fs-4">Edit Task Description</label>
+								<input type="text" 
+								 		class="form-control" 
+								 		th:field="*{taskDescription}" 
+								 		id="description" 
+								 		placeholder="Change your task description" />
+							</div>
+							<div class="mb-3 form-check">
+							    <input type="checkbox" 
+							    		class="form-check-input" 
+							    		id="isComplete"
+							    		th:field="*{status}"
+							    		th:checked="${status} == true">
+							    <label class="form-check-label" for="isComplete">Mark as done</label>
+							</div>
+							<div class="row">
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<a href="/task-tracker/index" class="btn btn-secondary" style="text-decoration: none;">Back</a>
+								</div>
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<button type="submit" class="btn btn-success">Update</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				  </div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js}"></script>
+</body>
+</html>

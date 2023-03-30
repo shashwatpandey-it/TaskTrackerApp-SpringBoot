@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" xmlns:th="http:/www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>task form</title>
+	<link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.css}" />
+</head>
+<body class="bg-success" style="--bs-bg-opacity: .25">
+	<div class="container p-5">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<div class="card">
+				  <div class="card-header text-center fs-4">Create Task</div>
+				  <div class="card-body">
+					  <form action="" th:action="@{/task-tracker/task-control/task}" th:object="${taskModel}" method="post">
+						<div class="form-group my-4 mx-3">
+							<div class="my-4">
+								<label for="description" class="form-label fw-semibold fs-4">Add Task Description</label>
+								<input type="text" 
+								 		class="form-control" 
+								 		th:field="*{taskDescription}" 
+								 		id="description" 
+								 		placeholder="Decribe your task in short" /> 		
+							</div>
+							<div class="row">
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<a href="/task-tracker/index" class="btn btn-secondary" style="text-decoration: none;">Back</a>
+								</div>
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<button type="submit" class="btn btn-success">Add</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				  </div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js}"></script>
+</body>
+</html>
