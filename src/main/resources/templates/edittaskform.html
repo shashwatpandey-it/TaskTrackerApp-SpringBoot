@@ -5,11 +5,14 @@
 	<title>edit task form</title>
 	<link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.css}" />
 </head>
-<body>
-		<div class="container-fluid">
-			<div class="row justify-content-md-center">
-				<div class="col-10 mx-auto my-5 bg-success bg-gradient" style="--bs-bg-opacity: .25">
-					<form action="" th:action="@{/task/{id}(id=${task.id})}" th:object="${task}" method="post">
+<body class="bg-success" style="--bs-bg-opacity: .25">
+	<div class="container p-5">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<div class="card">
+				  <div class="card-header text-center fs-4">Edit Task</div>
+				  <div class="card-body">
+					  <form action="" th:action="@{/task-tracker/task-control/task/{id}(id=${task.id})}" th:object="${task}" method="post">
 						<div class="form-group my-4 mx-3">
 							<div class="my-4">
 								<label for="description" class="form-label fw-semibold fs-4">Edit Task Description</label>
@@ -29,7 +32,7 @@
 							</div>
 							<div class="row">
 								<div class="d-grid gap-2 col-6 mx-auto">
-									<a href="/index" class="btn btn-secondary" style="text-decoration: none;">Back</a>
+									<a href="/task-tracker/index" class="btn btn-secondary" style="text-decoration: none;">Back</a>
 								</div>
 								<div class="d-grid gap-2 col-6 mx-auto">
 									<button type="submit" class="btn btn-success">Update</button>
@@ -37,10 +40,11 @@
 							</div>
 						</div>
 					</form>
+				  </div>
 				</div>
 			</div>
-		</div>
-	
+		</div>	
+	</div>
 	<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js}"></script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" xmlns:th="http:/www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Register</title>
+	<link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.css}" />
+</head>
+<body class="bg-success" style="--bs-bg-opacity: .25">
+	<div class="container p-5">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<div class="card">
+				  <div class="card-header text-center fs-4">Register User</div>
+				  <div class="card-body">
+					  <form action="" th:action="@{/task-tracker/auth/register}" method="post">
+						  <div class="mb-4">
+						    <label for="firstName" class="form-label">First Name</label>
+						    <input name="firstName" type="text" class="form-control" id="firstName" aria-describedby="firstName" placeholder="First Name" required>
+						  </div>
+						  <div class="mb-4">
+						    <label for="lastName" class="form-label">Last Name</label>
+						    <input name="lastName" type="text" class="form-control" id="lastName" aria-describedby="lastName" placeholder="Last Name" required>
+						  </div>
+						  <div class="mb-4">
+						    <label for="email" class="form-label">Email address</label>
+						    <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="name@example.com" required>
+						    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+						  </div>
+						  <div class="mb-4">
+							  <label for="password" class="form-label">Password</label>
+							  <input name="password" type="password" id="password" class="form-control" aria-describedby="passwordHelpBlock" required>
+							  <div id="passwordHelpBlock" class="form-text">
+								  Your password is encreypted and secured.
+							  </div>
+						  </div>
+						  <div class="text-center mb-4">
+						  	<button type="submit" class="btn btn-primary">Register</button>
+						  </div>
+					</form>
+				  </div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js}"></script>
+</body>
+</html>
