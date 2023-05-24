@@ -1,0 +1,72 @@
+<!doctype html>
+<html land=en xmlns:th="http:/www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Task Tracker</title>
+	<link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.css}" />
+	<link th:rel="stylesheet" th:href="@{/webjars/bootstrap-icons/1.10.2/font/bootstrap-icons.css}" />
+</head>
+<body  class="bg-success" style="--bs-bg-opacity: .25">
+	<div class="container-fluid">
+		<h1 class="text-center font-monospace fw-bold mt-3">Task Tracker App</h1>
+		<hr class="border border-light border-2 opacity-100" />
+	</div>
+	
+	<div class="container mt-3">
+    <h4>Welcome to the Task Tracker App!</h4>
+    <p class="lead">The Task Tracker App is designed to simplify your day-to-day task management and ensure you stay
+      organized and focused. With our intuitive and user-friendly interface, you can effortlessly track and prioritize
+      your tasks, making your workday more productive and efficient.</p>
+
+    <h5>Here's how the Task Tracker App can enhance your task management experience:</h5>
+
+    <ul class="list-group mt-2">
+      <li class="list-group-item">
+        <strong>Seamless Task Tracking:</strong> As soon as you log into the app, you can easily add all the tasks you
+        need to complete for the day. Each task is initially marked as pending, keeping you aware of what needs to be
+        done.
+      </li>
+      <li class="list-group-item">
+        <strong>Automated Reminders:</strong> To help you stay on top of your tasks, the Task Tracker App sends you
+        reminders via email every four hours for any pending tasks. This ensures that you never miss an important
+        deadline or forget to complete a task.
+      </li>
+      <li class="list-group-item">
+        <strong>Task Progress Monitoring:</strong> As you work through your tasks, you have the power to mark them as
+        done in the app. By doing so, you not only keep track of your progress but also eliminate further reminders for
+        completed tasks. This feature saves you from unnecessary notifications and allows you to focus on the tasks that
+        require your attention.
+      </li>
+      <li class="list-group-item">
+        <strong>Daily Reset:</strong> At midnight (12:00 AM), the Task Tracker App automatically clears all the tasks
+        from the database. This daily reset gives you a fresh start every day, ensuring you begin each day with a clean
+        slate and a clear mind.
+      </li>
+    </ul>
+
+    <p class="mt-2">We understand that effective task management is vital to your productivity and success. Whether you're an office
+      professional, student, or anyone seeking to optimize their daily routine, the Task Tracker App is here to support
+      you.</p>
+
+    <p>Get started today and experience the convenience of tracking your tasks with ease. Stay organized,
+      meet your deadlines, and accomplish your goals effortlessly.</p>
+    </div>
+    
+    <div class="container-fluid">
+		<hr class="border border-light border-2 opacity-100" />
+	</div>
+    
+	<div class="container px-4 text-center">
+  		<div class="row gx-5">
+    		<div class="col">
+     			<div class="p-2 text-end"><a class="btn btn-primary btn-lg" href="/task-tracker/auth/entry/login" role="button">Login</a></div>
+    		</div>
+    		<div class="col">
+      			<div class="p-2 text-start"><a href="/task-tracker/auth/entry/regi" class="btn btn-secondary btn-lg" role="button">Register</a></div>
+    		</div>
+  		</div>
+	</div>
+	
+	<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js}"></script>	
+</body>
+</html>

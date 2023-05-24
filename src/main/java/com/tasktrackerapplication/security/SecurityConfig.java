@@ -30,7 +30,7 @@ public class SecurityConfig {
 							.csrf()
 							.disable()
 							.authorizeHttpRequests()
-							.requestMatchers("/task-tracker/auth/**", "/webjars/**")
+							.requestMatchers("/task-tracker","/task-tracker/auth/**", "/webjars/**")
 							.permitAll()
 							.anyRequest()
 							//.permitAll()

@@ -24,6 +24,13 @@ public class HomeController {
 	@Autowired
 	private TaskService taskService;
 	
+	@GetMapping
+	public ModelAndView entryPage() {
+		ModelAndView modelAndView = new ModelAndView("entry");
+		logger.info("returned entry page from home controller");
+		return modelAndView;
+	}
+	
 	@GetMapping("/index")
 	public ModelAndView home(HttpServletRequest request) {
 		ModelAndView modelAndView = new ModelAndView("index");
